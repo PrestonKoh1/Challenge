@@ -1,0 +1,64 @@
+#include <linkbot.h>
+
+CLinkbotI robot;
+robot.setSpeed(1, 1.75);
+
+string_t a = "";
+
+while(a!="stop"){
+    scanf("%s", &a);
+    if(a=="j"){
+    robot.driveDistance(0.5, 1.75);
+    }
+    if(a=="jj"){
+    robot.driveDistance(0.1, 1.75);
+    }
+    if(a=="o"){
+    robot.driveDistance(1, 1.75);
+    }
+    if(a=="t"){
+    robot.driveDistance(2, 1.75);
+    }
+    if(a=="f"){
+    robot.driveDistance(4, 1.75);
+    }
+    if(a=="e"){
+    robot.driveDistance(8, 1.75);
+    }
+    if(a=="s"){
+    robot.driveDistance(16, 1.75);
+    }
+    if(a=="tt"){
+    robot.driveDistance(32, 1.75);
+    }
+    if(a=="r"){
+    robot.turnRight(90, 1.75, 3.69);
+    }
+    if(a=="l"){
+    robot.turnLeft(90, 1.75, 3.69);
+    }
+    if(a=="sr"){
+    robot.turnRight(5, 1.75, 3.69);
+    }
+    if(a=="srr"){
+    robot.turnRight(2, 1.75, 3.69);
+    }
+    if(a=="sl"){
+    robot.turnLeft(5, 1.75, 3.69);
+    }
+    if(a=="sll"){
+    robot.turnLeft(2, 1.75, 3.69);
+    }
+    if(a=="h"){
+    robot.turnLeft(180, 1.75, 3.69);
+    }
+    if(a=="b"){
+    robot.driveDistance(-1, 1.75);
+    }
+    if(a=="bb"){
+    robot.driveDistance(-0.5, 1.75);
+    }
+    if(a=="b2"){
+    robot.driveDistance(-3, 1.75);
+    }
+}
